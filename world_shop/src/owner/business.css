@@ -1,0 +1,41 @@
+#bsnsForm{
+   
+    margin-top: 10vh;
+    display: block;
+    margin-left: 25vw;
+   
+
+}
+
+#forms{
+    
+background-color: black;
+}
+#inputs{
+
+    display: block;
+    opacity: 0.6;
+    width: 50vw;
+   
+}
+
+#label{
+    color: white;
+    font-weight: bold;
+}
+
+#ownerImage{
+
+    background-color: white;
+    width: 30vw;
+    height: 30vw;
+    border-radius: 360px;
+   }
+
+   #camera{
+
+    margin-top: 55vh;
+    margin-left: 20vw;
+    font-size: 30px;
+    position: static;
+   }
