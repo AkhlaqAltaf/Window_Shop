@@ -1,5 +1,5 @@
 
-import "./business.css";
+import "../FormsStyle/BusinessOwnerForm.css";
 import UploadAndDisplayImage from "./imageUpld";
 function BusinessForm() {
 
@@ -12,7 +12,7 @@ function BusinessForm() {
         <form class="row g-3" id="bsnsForm">
           
         <div id="ownerImage">
-        <UploadAndDisplayImage/>
+        {/* <UploadAndDisplayImage/> */}
 
           </div>
               <div><div class="mb-3">

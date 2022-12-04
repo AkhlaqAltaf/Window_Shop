@@ -1,5 +1,5 @@
-import RegisterBusiness from "../Dummy-Data/RegisterBusiness";
-import "./BusinessOwner.css";
+
+import "../FormsStyle/BusinessOwnerForm.css";
 function Owners() {
     
     

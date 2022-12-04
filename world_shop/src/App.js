@@ -1,20 +1,25 @@
 
 import { Routes, Route } from "react-router-dom";
 
-import Logins from "./Login/login";
-import NavBar from "./NavBar/navbar";
+
 import BusinessForm from "./owner/business";
-import "./App.css";
+import "./StyleSheets/App.css";
 
-import RegisterBusiness from "./Dummy-Data/RegisterBusiness";
-import Items from "./Dummy-Data/Items";
 
-import Cards from "./Dummy-Data/components/Cards";
-import LoginData from "./Login/LoginData";
-import Visiting from "./Dummy-Data/Visit";
-import Details from "./Dummy-Data/Detail";
 import {useLocation} from "react-router-dom";
 import {useState} from "react";
+
+import Login from "./Components/Login";
+import ProductVisiting from "./Components/ProductVisiting";
+import BusinessVisiting from "./Components/BusinessVisiting";
+import Navbar from "./Components/Navbar";
+import Businesses from "./Components/Business";
+import Product from "./Components/Products";
+import AddProduct from "./Forms/AddProduct";
+import BusinessControl from "./Components/YourBusiness";
+import LoginControl from "./Components/LoginControl";
+
+
 function Application() {
 
 
@@ -37,7 +42,7 @@ const pass=data?data.authPass:"";
     const Admin=()=>{
 
     
-    if (mail=="Akhlaq"&&pass=="ak") {
+    if (mail==="Akhlaq"&&pass==="ak") {
         
 
        return <h3 style={{
@@ -65,21 +70,24 @@ const pass=data?data.authPass:"";
   return (
 
     <div id="body">
-   <NavBar/>
-
-{/* <Admin/> */}
+  <Navbar/>
+ 
    <Routes >
-   <Route path="/" element={<Items/>}/>
-   
-   <Route path="/business" element={<RegisterBusiness/>}/>
-   <Route path="/login" element={<Logins/>}/>
+   <Route path="/" element={<Product/>}/>
+   <Route path="/business" element={<Businesses/>}/>
+   <Route path="/login" element={<Login/>}/>
    <Route path="/addbusiness" element={<BusinessForm/>}/>
 
-   <Route path="/details" element={<Details/>}/>
- <Route path="/visit" element={<Visiting/>}/>
-   
-   
+   <Route path="/ProductVisiting" element={<ProductVisiting/>}/>
+ <Route path="/BusinessVisiting" element={<BusinessVisiting/>}/>
+   <Route path="product" element={<AddProduct/>}/>
+   <Route path="yourbusiness" element={<BusinessControl/>}/>
    </Routes>     
+   <LoginControl style={{marginTop:"30vh"}}/>
+
+   {/* <Cards/> */}
+
+   {/* <AddProduct/> */}
    </div>
   );
 
