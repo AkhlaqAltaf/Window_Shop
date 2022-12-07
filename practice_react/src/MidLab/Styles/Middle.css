@@ -1,0 +1,84 @@
+
+
+#mainMiddle{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#ads{
+    margin-top: 50px;
+   height: 60vh;
+width: 50%;
+/* display: flex;
+flex-wrap: wrap; */
+border-radius: 20px;
+background-color: white;
+}
+
+#news{
+  
+    border-bottom: 1px solid rgb(108, 105, 105);
+    padding: 6px;
+}
+#ads1{
+    height: 60vh;
+    width: 100%;
+    
+   /* display: flex;
+   flex-wrap: wrap; */
+    
+}
+
+#image1{
+   
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding-top: 10px;
+   background-size: cover;
+    height: 30vh;
+    width: 96%;
+    margin-left: 2%;
+    
+}
+#descript1{
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: black;
+    color: white;
+    width: 96%;
+    padding: 5px;
+    margin-left: 2%;
+}
+#ads2{
+
+    height: 30vh;
+    width: 45%;
+    margin-left: 20px;
+    
+      margin-top: 2.5%;
+      background-color: white;
+      
+}
+#image2{
+    padding: 10px;
+    margin-top: 2.5vh;
+    height: 25vh;
+    
+}
+#descript2{
+    
+   
+    padding: 10px;
+    margin-top: 2.5vh;
+    
+    height: 25vh;
+    
+    
+}
+
+.secondAds{
+
+    
+}
+
+

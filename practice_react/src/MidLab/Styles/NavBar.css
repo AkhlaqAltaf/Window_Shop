@@ -1,0 +1,57 @@
+#menu{
+    width: 100vw;
+     background-color: skyblue;
+    height: 10vh;
+    display: flex;
+    flex-wrap: wrap;
+    /* position: fixed;
+    z-index: 999; */
+    margin-top: 0%;
+
+
+}
+
+#logo{
+
+   width: 120px;
+   margin-left: 60px;
+   margin-top: 10px;
+}
+
+.links{
+
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+    font-size: 14px;
+}
+
+.links:hover{
+    background-color:rgb(49, 145, 183);
+    color: white;
+}
+#buttons{
+    margin-top: 7px;
+    margin-left: 30px;
+}
+#icons{
+  
+    padding-top: 0.7%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 150px;
+
+
+}
+#edition{
+    font-size: 14px;
+    margin-top: 3px;
+    color: white;
+}
+.ic{
+  margin-top: 5px;
+  margin-left: 20px; 
+  color: white;
+  font-size: 18px;
+
+}

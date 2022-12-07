@@ -1,0 +1,32 @@
+#mainScorer{
+
+   
+   
+    margin-top: 13px;
+}
+#scorerCard{
+
+    background-color: rgb(255, 255, 255);
+    padding: 5px;
+   margin-top: 20px;
+   border-radius: 20px;
+}
+#team1Logo{
+
+    width: 15px;
+    height: 15px;
+    margin-top: 5px;
+    padding-right: 5px;
+}
+.teams{
+
+    display: flex;
+
+}
+#scorer{
+
+    margin-left: 40%;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 13px;
+}
