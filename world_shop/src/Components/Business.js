@@ -40,7 +40,7 @@ function Businesses() {
     ]);
 
 
-    
+   
     return ( 
       <div id="mainDiv">
 

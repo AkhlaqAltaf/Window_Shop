@@ -219,3 +219,39 @@ color: black;
   50% { background-position: 400% 0; }
   100% { background-position: 0 0; }
 }
+
+
+@media only screen and (max-width: 480px) {
+
+  #cards{
+
+    
+background-color: red;
+
+
+  }
+
+
+  .card-description {
+    display: inline-block;
+ 
+    font-weight: 10;
+    line-height: 15px;
+    margin: 10px 0;
+     
+    
+  }
+  .media {
+    width: 150px;
+    height: 20vh;
+     
+   }
+   .card-container {
+    margin: 5px auto 0;
+    position: relative;
+    /* width: 80%; */
+    /* height: 100vh; */
+   
+  
+  }
+}

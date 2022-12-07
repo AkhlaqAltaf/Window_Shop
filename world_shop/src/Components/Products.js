@@ -24,24 +24,24 @@ function Product(data) {
    }
 ,
 
-   {itemID:1,businessID:1,category:"Camera",name:"HDD CAMERA 15px HD",
+   {itemID:2,businessID:1,category:"Camera",name:"HDD CAMERA 15px HD",
    frontImage:"Images/Products/Camera.jpg",
-   price:"42000",importants:"Condetion: Slightly Used – 9/10 without box"
+   price:"42000",importants:" Here Are CameraCondetion: Slightly Used – 9/10 without box"
      +"Screen:14.00 inchesActive Matrix TFT Color LCD 1600 x 900"
      +"Ram: 4GB DDR3 COLOR:Black",
      Descrition:"Bluetooth: v4.0+LE LAN Speed: 10/100/1000 Wireless/Wifi: 802.11b/g/n  "
      +" Webcam: Yes HD Webcam 10 Days Checking Warranty by Usedeals.pk"
     },
-    {itemID:1,businessID:1,category:"Head Phones",name:"Head Phone",
+    {itemID:3,businessID:1,category:"Head Phones",name:"Head Phone",
     frontImage:"Images/Products/HeadPhones.jpg",
-    price:"42000",importants:"Condetion: Slightly Used – 9/10 without box"
+    price:"42000",importants:"here are head phones Condetion: Slightly Used – 9/10 without box"
     +"Screen:14.00 inchesActive Matrix TFT Color LCD 1600 x 900"
     +"Ram: 4GB DDR3 COLOR:Black",
     Descrition:"Bluetooth: v4.0+LE LAN Speed: 10/100/1000 Wireless/Wifi: 802.11b/g/n  "
     +" Webcam: Yes HD Webcam 10 Days Checking Warranty by Usedeals.pk"
    }
    ,
-   {itemID:1,businessID:1,category:"Laptop",name:"Body Loshan",
+   {itemID:4,businessID:1,category:"Laptop",name:"Body Loshan",
    frontImage:"Images/Products/Loshan.jpg",
    price:"42000",
    importants:"Condetion: Slightly Used – 9/10 without box"
@@ -50,7 +50,7 @@ function Product(data) {
      Descrition:"Bluetooth: v4.0+LE LAN Speed: 10/100/1000 Wireless/Wifi: 802.11b/g/n  "
      +" Webcam: Yes HD Webcam 10 Days Checking Warranty by Usedeals.pk"
     },
-    {itemID:1,businessID:1,category:"Laptop",name:"Bata Shoe",
+    {itemID:5,businessID:1,category:"Laptop",name:"Bata Shoe",
     frontImage:"Images/Products/Shoe.jpg",
     price:"42000",importants:"Condetion: Slightly Used – 9/10 without box"
     +"Screen:14.00 inchesActive Matrix TFT Color LCD 1600 x 900"
@@ -60,7 +60,7 @@ function Product(data) {
    }
 ,
 
-{itemID:1,businessID:1,category:"Laptop",name:"Beauti Products",
+{itemID:6,businessID:1,category:"Laptop",name:"Beauti Products",
 frontImage:"Images/Products/BeautiProducts.jpg",
 price:"42000",importants:"Condetion: Slightly Used – 9/10 without box"
      +"Screen:14.00 inchesActive Matrix TFT Color LCD 1600 x 900"
@@ -68,7 +68,7 @@ price:"42000",importants:"Condetion: Slightly Used – 9/10 without box"
      Descrition:"Bluetooth: v4.0+LE LAN Speed: 10/100/1000 Wireless/Wifi: 802.11b/g/n  "
      +" Webcam: Yes HD Webcam 10 Days Checking Warranty by Usedeals.pk"
     },
-    {itemID:1,businessID:1,category:"Laptop",name:"Ladies Hand Bag",
+    {itemID:7,businessID:1,category:"Laptop",name:"Ladies Hand Bag",
     
     frontImage:"Images/Products/LadiesBag.jpg",
     
@@ -82,14 +82,15 @@ price:"42000",importants:"Condetion: Slightly Used – 9/10 without box"
 
     ]
     
-    )
+    );
 
+   
     return (  
 
         <div id="itemsBody">
     {
    
-        items.map((ref)=>
+        items.map((ref,index)=>
         
         (
 <div id="cards">
@@ -101,8 +102,8 @@ price:"42000",importants:"Condetion: Slightly Used – 9/10 without box"
       <img src={ref.frontImage} alt="" class="media" />
       <span class="card-author subtle">{ref.name}</span>
       <h2 class="card-title">{ref.price}/-</h2>
-      <p class="card-description subtle">{ref.importants}</p>
-      <div class="card-read">Read</div>
+      <p class="card-description subtle">{ref.importants.substring(0,40)+"..."}</p>
+      <div class="card-read" >Read</div>
 
       <div id="buttons">
         <Link to="/ProductVisiting" id="location" state={{
